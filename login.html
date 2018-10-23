@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="shortcut icon" href="//static.zcool.cn/git_z/z/site/favicon.ico?version=1535448240383" />
+		<link rel="Bookmark" href="https://passport.zcool.com.cn/favicon.ico">
+		<link href="css/passnumberbind.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<script type="text/javascript" src="js/login.js">
+			
+		</script>
+	</head>
+	<body>
+		<div class="pass-main-body">
+			<input type="hidden" id="thirdLogin" name="thirdLogin" value="">
+			<div class="pass-header-wrap">
+
+				<div class="login-passcard-nav">
+					<a href="https://www.zcool.com.cn/" class="login-zcool-logo"></a>
+					通行证
+				</div>
+
+			</div>
+
+			<div class="login-logo">
+				<!--<a href="https://www.zcool.com.cn/" class="zcool-logo"><img src="images/zcool_logo.svg"></a>-->
+				<br> 登录站酷网，与650万+ 名设计师一起交流设计、分享快乐吧！
+			</div>
+			<div id="box">
+				<!-- 通行证默认登录页面 -->
+				<ul class="tab-bottom">
+					<li class="select_v">密码登录</li>
+					<li>短信登录</li>
+				</ul>
+				<div class="login-div-box" id="login-div-box">
+					<p id="pho">
+						<input type="text" name="" id="phone" placeholder="手机号/邮箱" />
+					</p>
+					<h6 id="error_one" class="error">请输入正确的手机号码</h6>
+					<input type="password" id="upwd" placeholder="密码长度6-20位,字母/数字/符号至少2种" />
+					<h6 id="error_two" class="error">密码长度6-20位,字母/数字/符号至少2种</h6>
+					<p class="sub"><input type="button" name="login" id="login" value="登录" /></p>
+					<!--<h6 id="error_three" class="error">请输入正确的验证码</h6>-->
+					
+					<p class="agree">
+						<input type="checkbox" id="checkbox" checked="checked" />
+						下次自动登录
+						<span class="right">
+							<a href="javascript:void()">忘记密码 | </a> 
+							<a href="javascript:void()">注册</a>
+						</span>
+					</p>
+					<div class="social">
+						<h4>第三方账号登陆</h4>
+						<i class="icon iconfont" id="weichat"><a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxef5765dd395d8504&redirect_uri=http://passport.zcool.com.cn/thirdlogin/wechat_callback.do?appId=1006&response_type=code&scope=snsapi_login&state=STATE88555">&#xe628;</a></i>
+						<i class="icon iconfont" id="weibo"><a href="https://api.weibo.com/oauth2/authorize?client_id=163310332&redirect_uri=http://passport.zcool.com.cn/thirdlogin/wb_callback.do?appId=1006&response_type=code&state=test">&#xe510;</a></i>
+						<i class="icon iconfont" id="qq"><a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=100523803&redirect_uri=http://passport.zcool.com.cn/thirdlogin/qq_callback/1006&response_type=code&state=1033b23558c4c982f3bb89c442bf70b2&scope=get_user_info,add_topic,add_one_blog,add_album,upload_pic,list_album,add_share,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idollist,add_idol,del_ido,get_tenpay_addr">&#xe624;</a></i>
+					</div>
+				</div>	
+				<!--短信登录界面-->
+				<div class="note_login" id="note_login">
+					<p id="pho">
+						&nbsp;&nbsp;+86&nbsp;
+						<span id="select"></span>&nbsp;&nbsp;
+						<input type="text" name="" id="phone" placeholder="手机号" />
+					</p>
+					<h6 id="error_one" class="error">请输入正确的手机号码</h6>
+					<div class="verify">
+						<div class="v-over"></div>
+						<div class="v-tip">请按住滑块，拖动到最右边</div>
+						<div class="v-move">&gt;&gt;</div>
+					</div>
+					<h2 id="auth_code">
+						<input type="text" id="code" placeholder="验证码"/><input type="button" id="y_btn" value="发送验证码" />
+					</h2>
+					<h6 id="error_two" class="error">请输入正确的验证码</h6>
+					<p class="sub"><input type="button" name="login" id="login" value="登录" /></p>
+					<p class="agree">
+						<input type="checkbox" id="checkbox" checked="checked" />
+						下次自动登录
+						<span class="right">
+							<a href="javascript:void()">忘记密码 | </a> 
+							<a href="javascript:void()">注册</a>
+						</span>
+					</p>
+					<div class="social_v">
+						<h4>第三方账号登陆</h4>
+						<i class="icon iconfont" id="weichat"><a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxef5765dd395d8504&redirect_uri=http://passport.zcool.com.cn/thirdlogin/wechat_callback.do?appId=1006&response_type=code&scope=snsapi_login&state=STATE88555">&#xe628;</a></i>
+						<i class="icon iconfont" id="weibo"><a href="https://api.weibo.com/oauth2/authorize?client_id=163310332&redirect_uri=http://passport.zcool.com.cn/thirdlogin/wb_callback.do?appId=1006&response_type=code&state=test">&#xe510;</a></i>
+						<i class="icon iconfont" id="qq"><a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=100523803&redirect_uri=http://passport.zcool.com.cn/thirdlogin/qq_callback/1006&response_type=code&state=1033b23558c4c982f3bb89c442bf70b2&scope=get_user_info,add_topic,add_one_blog,add_album,upload_pic,list_album,add_share,check_page_fans,add_t,add_pic_t,del_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idollist,add_idol,del_ido,get_tenpay_addr">&#xe624;</a></i>
+					</div>
+				</div>
+			</div>
+			
+			<div class="login-imgsource">
+				<a href="https://www.hellorf.com/photo/show/403770346" target="_blank">图片来自站酷海洛 </a>
+			</div>
+
+			<div class="footer login-footer">
+				<p>京ICP备11017824号-4 / 京ICP证130164号 北京市公安局朝阳分局备案编号:110105000501</p>
+				<p>Copyright © 2016-2017 ZCOOL
+					<a href="javascript:;" onclick="doChangeLang(&#39;zh&#39;)">中文</a>
+					<a href="javascript:;" onclick="doChangeLang(&#39;en&#39;)">English</a>
+				</p>
+			</div>
+			
+		</div>
+
+	</body>
+
+</html>

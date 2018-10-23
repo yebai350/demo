@@ -1,0 +1,303 @@
+#box{
+	width: 400px;
+	height: 500px;
+	background: #FFFFFF;
+	margin: 0 auto;
+}
+#box ul{
+	width: 360px;
+	height: 53.px;
+	border-bottom: 1px solid #CCDDED;
+	margin: 0 auto;
+}
+#box ul li{
+	float: left;
+	font-size: 16px;
+	line-height: 50px;
+	cursor: pointer;
+	color: #C1B9B9;
+}
+#box ul li{
+	color: #C1B9B9;
+	border: none;
+	float: left;
+	font-size: 16px;
+	line-height: 50px;
+	cursor: pointer;
+}
+#box ul .select_v{
+	border-bottom: 2px solid #000000;
+	color: black;
+}
+#box ul li:last-child{
+	margin-left: 20px;
+}
+
+#box #login-div-box{
+	width: 360px;
+	height: 440px;
+	/*display: none;*/
+}
+.login-div-box #phone{
+	width: 300px;
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	outline: 0;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 5px;
+	background: #F4F4F4;
+	margin-top: 40px;
+}
+.login-div-box h6{
+	text-align: left;
+	color: red;
+	margin-left: 20px;
+	opacity: 0;
+}
+.login-div-box #upwd{
+	width: 300px;
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	outline: 0;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 5px;
+	background: #F4F4F4;
+}
+.login-div-box .agree{
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.login-div-box .agree .right{
+	margin-right: 20px;
+}
+.login-div-box .agree .right a{
+	color: #CCCCCC;
+}
+.login-div-box #login{
+	width: 320px;
+	height: 40px;
+	border: 1px solid #CCCCCC;
+	font-size: 17px;
+	border-radius: 5px;
+	background: #F4F4F4;
+	color: #CDCDCD;
+	margin-top: 20px;
+}
+.social{
+	width: 338px;
+	height: 43px;
+	margin: 0 auto;
+	font-size: 15px;
+}
+.social h4{
+	font-size: 18px;
+	margin-top: 40px;
+	color: #C1C1C1;
+}
+.social i a{
+	font-size: 30px;
+	line-height: 100px;
+	color: #E0E0E0;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+#weibo a{
+	font-size: 35px;
+}
+#weichat a:hover{
+	color: green;
+}
+#weibo a:hover{
+	color: red;
+}
+#qq a:hover{
+	color: deepskyblue;
+}
+#box .note_login{
+	width: 360px;
+	height: 440px;
+	margin: 0 auto;
+	display: none;
+	text-align: left;
+}
+.note_login #pho{
+	width: 340px;
+	margin-top: 40px;
+	margin-left: 10px;
+	border: 1px solid #C0C0C0;
+	border-radius: 5px;
+	line-height: 43px;
+	background: #EEEEEE;
+	display: inline-block;
+}
+.note_login .sub{
+	width: 338px;
+	height: 43px;
+	margin: 0 auto;
+	border-radius: 5px;
+	line-height: 43px;
+	border-radius: 5px;
+}
+.note_login p #select{
+	display: inline-block;
+	border: 7px solid black;
+	vertical-align: middle;
+	border-color: black transparent transparent transparent; 
+}
+.note_login .error{
+	width: 338px;
+	color: red;
+	margin: 0 auto;
+	line-height: 25px;
+	font-size: 10px;
+	opacity: 0;
+}
+.note_login p #phone{
+	width: 200px;
+	height: 23px;
+	border: none;
+	outline: 0;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 5px;
+	background: none;
+}
+.note_login h2{
+	width: 338px;
+	height: 43px;
+	margin: 0 auto;
+	margin-top: 25px;
+	border-radius: 5px;
+	line-height: 43px;
+	background: #FFF;
+	display: none;
+}
+.note_login h2 input:first-child{
+	width: 100px;
+	height: 23px;
+	border: none;
+	outline-color: white;
+	padding: 10px;
+	font-size: 15px;
+	background: #EEEEEE;
+	border-radius: 5px;
+}
+.note_login h2 input:last-child{
+	width: 100px;
+	height: 43px;
+	border: none;
+	font-size: 15px;
+	outline: 0;
+	background: #FFD100;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+.verify {
+	position: relative;
+	width: 338px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	background-color: #EEEEEE;
+	cursor: pointer;
+}
+.verify div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+}
+.verify .v-over {
+	width: 0;
+	background-color: #5AC65A;
+}
+.verify .v-tip {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+}
+.verify .v-move {
+	width: 38px;
+	height: 38px;
+	border: 1px solid #999;
+	color: #666;
+	font-size: 14px;
+	font-family: "Microsoft Yahei";
+	text-align: center;
+	background-color: #fff;
+	cursor: move;
+}
+#upwd{
+	width: 280px;
+	height: 22px;
+	border: none;
+	outline: 0;
+	padding: 10px;
+	font-size: 14px;
+	border-radius: 5px;
+	background: none;
+}
+
+#agree{
+	width: 338px;
+	height: 43px;
+	margin: 0 auto;
+	line-height: 25px;
+}
+#agree a{
+	color: #FFD100;
+}
+#login{
+	width: 360px;
+	height: 43px;
+	border-radius: 5px;
+	line-height: 43px;
+	background: #EEEEEE;
+	border: none;
+	color: #BBC0CD;
+	font-size: 18px;
+	outline: 0;
+}
+.note_login .agree{
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.note_login .agree .right{
+	margin-right: 20px;
+}
+.note_login .agree .right a{
+	color: #CCCCCC;
+}
+.note_login #login{
+	width: 340px;
+	height: 45px;
+	border: 1px solid #CCCCCC;
+	font-size: 17px;
+	border-radius: 5px;
+	background: #F4F4F4;
+	color: #CDCDCD;
+}
+.social_v{
+	width: 338px;
+	margin: 0 auto;
+	font-size: 15px;
+	text-align: center;
+}
+.social_v h4{
+	font-size: 18px;
+	margin-top: 40px;
+	color: #C1C1C1;
+}
+.social_v i a{
+	font-size: 30px;
+	line-height: 100px;
+	color: #E0E0E0;
+	margin-left: 20px;
+	cursor: pointer;
+	vertical-align: middle;
+}
